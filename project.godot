@@ -14,6 +14,19 @@ config/name="insect"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Dialogues="*uid://dyblm0okgfuo4"
+DialogueManager="*uid://cebdvvmbbrjat"
+GameManager="*uid://dk7ux6y4v4xxh"
+Registry="*uid://wfkoeckml6n0"
+SceneChanger="*uid://ypqgqkabphl3"
+Util="*uid://bgfihy7k245xk"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
+
 [physics]
 
 3d/physics_engine="Jolt Physics"

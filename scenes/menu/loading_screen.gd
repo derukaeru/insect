@@ -14,4 +14,5 @@ func _on_progress_changed(_value) -> void:
 func _on_loading_finished() -> void:
 	animation.play_backwards("fade")
 	await animation.animation_finished
+	GameManager._unpause()
 	queue_free()

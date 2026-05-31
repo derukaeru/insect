@@ -1,7 +1,7 @@
 extends Node
 
+@export var disable_mouse_on_pause: bool = false
 @onready var pause_screen = load(Registry.UID["pause_screen"]).instantiate()
-
 var canvas_layer = CanvasLayer.new()
 
 func _ready() -> void:
@@ -15,10 +15,18 @@ func _ready() -> void:
 func _process(_d) -> void:
 	if Input.is_action_just_pressed("ui_cancel"):
 		if get_tree().paused:
-			get_tree().paused = false
-			pause_screen.hide()
-			Util.mouse_captured()
+			_unpause()
 		else:
-			get_tree().paused = true
-			pause_screen.show()
-			Util.mouse_visible()
+			_pause()
+
+func _pause() -> void:
+	get_tree().paused = true
+	pause_screen.show()
+	Util.mouse_visible()
+
+func _unpause() -> void:
+	get_tree().paused = false
+	pause_screen.hide()
+	
+	if disable_mouse_on_pause:
+		Util.mouse_captured()

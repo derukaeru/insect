@@ -1,8 +1,9 @@
 [gd_scene format=3 uid="uid://7jemke30bxqq"]
 
-[ext_resource type="Script" uid="uid://dcl8l8xhw4vmu" path="res://scenes/menu/pause_screen.gd" id="1_s4fn5"]
+[ext_resource type="Script" uid="uid://sgpdk4ac7ibw" path="res://scenes/menu/pause_screen.gd" id="1_s4fn5"]
 
 [node name="pause_screen" type="Control" unique_id=2145161773]
+process_mode = 2
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

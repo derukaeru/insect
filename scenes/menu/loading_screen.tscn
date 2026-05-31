@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://tetiuyj7kfoe"]
 
-[ext_resource type="Script" uid="uid://b4683ndx4cykq" path="res://scenes/menu/loading_screen.gd" id="1_4je5t"]
+[ext_resource type="Script" uid="uid://bfxll0skis6np" path="res://scenes/menu/loading_screen.gd" id="1_4je5t"]
 
 [sub_resource type="Animation" id="Animation_4je5t"]
 length = 0.001
@@ -40,6 +40,7 @@ _data = {
 }
 
 [node name="loading_screen" type="Control" unique_id=444401678]
+process_mode = 3
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
