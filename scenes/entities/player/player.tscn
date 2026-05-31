@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://u4kfh8bfoq0p"]
+
+[ext_resource type="Script" uid="uid://b7agbxfn4c55t" path="res://scenes/entities/player/player.gd" id="1_1hmtu"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_yel1f"]
+height = 1.5371094
+
+[node name="player" type="CharacterBody3D" unique_id=553423638]
+script = ExtResource("1_1hmtu")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=2136785023]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7685547, 0)
+shape = SubResource("CapsuleShape3D_yel1f")
+
+[node name="SpringArm3D" type="SpringArm3D" parent="." unique_id=507251992]
+
+[node name="Camera3D" type="Camera3D" parent="SpringArm3D" unique_id=1548495393]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.4776946, 0)
