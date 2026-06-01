@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
-@onready var spring_arm = $SpringArm3D
-@onready var camera = $SpringArm3D/Camera3D
+@onready var spring_arm = $ArmContainer/SpringArm3D
+@onready var camera = $ArmContainer/SpringArm3D/Camera3D
 
 const MAX_SPEED: float = 12.8
 var SPEED: float = 0.0
