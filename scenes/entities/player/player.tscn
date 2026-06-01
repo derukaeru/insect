@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://u4kfh8bfoq0p"]
 
 [ext_resource type="Script" uid="uid://b7agbxfn4c55t" path="res://scenes/entities/player/player.gd" id="1_1hmtu"]
+[ext_resource type="PackedScene" uid="uid://d2m38ambwysfs" path="res://scenes/objects/directional_sprite/directional_sprite.tscn" id="2_635qg"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_yel1f"]
 height = 1.5371094
@@ -25,3 +26,5 @@ transform = Transform3D(1, 0, 0, 0, 0.8870108, 0.4617486, 0, -0.4617486, 0.88701
 [node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=317762206]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7690773, 0)
 mesh = SubResource("CapsuleMesh_1hmtu")
+
+[node name="DirectionalSprite" parent="." unique_id=1817869345 instance=ExtResource("2_635qg")]
